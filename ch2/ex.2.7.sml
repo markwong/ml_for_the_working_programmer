@@ -5,9 +5,6 @@ pound. Write functions to add and subtract two amounts, working with triples
 *)
 
 type money = int*int*int;
-val pence = 1;
-val shilling = 12 * pence;
-val pound = 20 * shilling;
 
 fun adjust_add (p,s,pe) =
     if pe > 12 then adjust_add(p,s + (pe div 12),pe mod 12)
