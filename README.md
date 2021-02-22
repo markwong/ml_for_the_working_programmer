@@ -1,1 +1,1 @@
-This repository contains the answers of exercises of the ML for Working Programmer.
+This repository contains the answers to exercises of the "ML for the Working Programmer" book.
