@@ -6,5 +6,10 @@ fun power(x,k) : real =
   else x * power(x*x, k div 2);
 
 How many multiplications does power(x,k) need in the worst case?
-number of multiplications = floor[log_2(k)]
+
+ANSWER: number of multiplications = floor[log_2(k)]
+
+CORRECT ANSWER: The worse case is when k has the form 2^n-1, for n>0.
+Then k remains odd in all the recursive calls and 2n-2 multiplications are
+performed.
 *)
