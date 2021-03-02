@@ -20,5 +20,6 @@ It is easy to verify by induction that P(n) = 2^(n-1), which gives faster ways
 of computing it.
 *)
 
+(* need mutually recursive functions here otherwise "sum" is not visible in "p" *)
 fun p n = if n=1 then 1 else 1 + sum(n-1)
 and sum k = if k<1 then 0 else p(k) + sum (k-1) 
