@@ -8,6 +8,15 @@ Use the function gcd to maintain the fractions in lowest terms, and ensure that
 the denominator is always positive.
 *)
 
+signature ARITH = sig
+  type t
+  val zero : t
+  val sum : t * t -> t
+  val diff : t * t -> t
+  val prod : t * t -> t
+  val quo : t * t -> t
+end
+
 structure Rational : ARITH = struct
   type t = int * int
   val zero = (0, 1)
